@@ -1,0 +1,270 @@
+body,li,ul,a,p,h6
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  content: "";
+  clear: both;
+  zoom:1;
+
+}
+.MainWrapper
+{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header nav
+{
+  width: 100%;
+  height: 0.6rem;
+  background: #fefefe;
+}
+
+
+
+header #menubotton
+{
+  width: 12%;
+  height: 100%;
+  float: left;
+}
+
+header #menubotton img
+{
+  width: 0.4rem;
+  height: 0.4rem;
+  float: left;
+  padding: 0.12rem;
+}
+
+header .yearandmonth
+{
+   width: 76%;
+   height: 100%;
+   box-sizing: border-box;
+   display: inline-block;
+   float: left;
+   margin: 0 auto;
+}
+header .yearandmonth a
+{
+  width: 100%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 0.6rem;
+  font-size: 0.36rem;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.02rem;
+
+}
+header .yearandmonth img
+{
+  width: 0.3rem;
+  height: 0.3rem;
+  padding: 0 0.08rem;
+}
+header #add
+{
+  float: right;
+  width: 10%;
+  height: 100%;
+}
+header #add img
+{
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0.06rem;
+  float: right;
+}
+
+.Content
+{
+  margin: 0;
+  padding: 0;
+  clear: both;
+  content: "";
+  height: 14rem;
+}
+.Content .Picture
+{
+  width: 100%;
+  height: 5.2rem;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  content: "";
+  background: url("../ima/421480.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Content .WeekAndDate
+{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  content: "";
+}
+
+.Content .WeekAndDate ul
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  content: "";
+  zoom:1;
+}
+.Content .WeekAndDate ul p
+{
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  content: "";
+  color: black;
+  font-size: 0.3rem;
+  text-decoration: none;
+  text-align: center;
+}
+.Content .WeekAndDate ul li
+{
+  width: 13.2%;
+  height: 100%;
+  margin: 0;
+  padding:0.36rem 0.005rem;
+  clear: both;
+  content: "";
+  display: inline-block;
+  list-style: none;
+}
+.Content .WeekAndDate .Week
+{
+  color: grey;
+}
+
+.Content .WeekAndDate .Date
+{
+  font-weight: bold;
+}
+
+.active
+{
+  color: white;
+  background: #6bead9;
+}
+
+.Content .ArticleReview
+{
+  width: 80%;
+  height: 5.4rem;
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+
+.Content .ArticleReview .Article
+{
+  width: 90%;
+  height: 30%;
+  margin: 0 auto;
+  padding: 0.25rem;
+}
+.Content .ArticleReview h6
+{
+  font-size: 0.5rem;
+}
+
+.Content .ArticleReview .Text
+{
+  width: 100%;
+  height: 100%;
+  font-size: 0.26rem;
+  letter-spacing: 0.02rem;
+}
+footer
+{
+  background: rgb(75,73,73);
+  height: 1.2rem;
+  margin: 0;
+  padding: 0;
+  zoom:1;
+}
+footer ul
+{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+footer ul a
+{
+  height: 100%;
+  width: 100%;
+    float: left;
+    margin-left: 0.2rem;
+  font-size: 0.4rem;
+  line-height: 0.8rem;
+  text-decoration: none;
+  color: white;
+
+}
+#SideBar
+{
+  width: 4rem;
+  height:14rem;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: -4rem;
+  bottom: 0;
+  position: fixed;
+  background: #333;
+  transition: left 0.5s;
+}
+#SideBar ul
+{
+  margin-top:1.6rem;
+}
+#SideBar ul li
+{
+  text-align: right;
+  padding-right: 0.4rem;
+}
+#SideBar ul a
+{
+  width: 100%;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-family:"Microsoft Yahei";
+}
+
+
+#Mask
+{
+  height: 14rem;;
+  width: 47%;
+  position: fixed;
+  top: 0;
+  right:0;
+  opacity: 0.2;
+  background: black;
+  display: none;
+}
