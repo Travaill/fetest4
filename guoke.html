@@ -5,65 +5,74 @@
 <title></title>
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
+<script src="js/TouchSlide.1.1.js"> </script>
+<script src="js/jquery.min.js"></script>
+<script src="js/mobiscroll_date.js" charset="gb2312"></script>
+<script src="js/mobiscroll.js"></script>
 <script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);  flex(100, 1);</script>
-
 <link href="css/guokr.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/normalize3.0.2.min.css" />
+<link rel="stylesheet" href="css/style.css?v=7" />
+<link href="css/mobiscroll.css" rel="stylesheet" />
+<link href="css/mobiscroll_date.css" rel="stylesheet" />
 </head>
 <body>
   <div class="MainWrapper">
 <header>
   <nav>
     <span id="menubotton" ><img src="ima/3.png" alt=""></span>
-    <div class="yearandmonth"><a href="#">March 2018<img src="ima/chevron-down.png" alt=""></a></div>
-    <span id="add"><img src="ima/68.png" alt=""></span>
+    <div class="yearandmonth">
+      <div id="form">
+      <form action="">
+        <input type="text" name="USER_AGE" id="USER_AGE" readonly class="input" placeholder="2017-03-20" />
+      </form>
+          <img src="ima/chevron-down.png" alt="">
+    </div>
+
+  </div>
   </nav>
 </header>
 <div class="Content">
-  <div class="Picture">
+  <div class="Picture"></div>
+  <div id="Banner" class="Banner">
+    <div class="hd">
+      <ul>
+        <li><a href="#">Sun<br>11</a></li>
+        <li><a href="#">Mon<br>12</a></li>
+        <li><a href="#">Tue<br>13</a></li>
+        <li><a href="#">Tue<br>13</a></li>
+        <li><a href="#">Tue<br>13</a></li>
+        <li><a href="#">Tue<br>13</a></li>
+        <li><a href="#">Tue<br>13</a></li>
+      </ul>
+    </div>
+    <div class="bd">
+        <ul>
+          <li><a href="#">官方明确感染H7N9高危人群</a></li>
+          <li><a href="#">台官员:将驱离进入钓岛大陆船</a></li>
+          <li><a href="#">陈云长子吁学江泽民思想方法</a></li>
+          <li><a href="#">央视批抗日剧目:比着俗争着二</a></li>
+          <li><a href="#">日:沈阳军区部队开赴中朝边境</a></li>
+          <li><a href="#">印度核潜艇经我周边未被发现</a></li>
 
+        </ul>
+        <ul>
+          <li><a href="#">日:沈阳军区部队开赴中朝边境</a></li>
+          <li><a href="#">印度核潜艇经我周边未被发现</a></li>
+          <li><a href="#">中国航母战斗群重防空轻反潜</a></li>
+          <li><a href="#">日本军车爆车胎造成一死一伤</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">农业占GDP低政府支持力度大</a></li>
+          <li><a href="#">林志玲:至今珍藏本山送的手绢</a></li>
+          <li><a href="#">五粮液高管年薪超茅台近一倍</a></li>
+          <li><a href="#">视频:朝鲜导弹反复出舱</a></li>
+        </ul>
+    </div>
   </div>
-  <div class="WeekAndDate">
-    <ul>
-      <li><p class="Week">Sun</p>
-        <p class="Date">11</p>
-      </li>
-      <li class="active"><p class="Week">Mon</p><p class="Date">12</p></li>
-      <li><p class="Week">Mon</p><p class="Date">12</p></li>
-      <li><p class="Week">Mon</p><p class="Date">12</p></li>
-      <li><p class="Week">Mon</p><p class="Date">12</p></li>
-      <li><p class="Week">Mon</p><p class="Date">12</p></li>
-    </ul>
-  </div>
-   <div class="ArticleReview">
-      <div class="Article">
-       <h6 >TITLE</h6>
-       <div class="Text">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut sint occaecat </p>
-       </div>
-
-      </div>
-      <div class="Article">
-       <h6>TITLE</h6>
-       <div class="Text">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut sint  </p>
-       </div>
-      </div>
-      <div class="Article">
-       <h6 >TITLE</h6>
-       <div class="Text">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut  </p>
-       </div>
-
-      </div>
-   </div>
+  <script type="text/javascript">TouchSlide({ slideCell:"#Banner",effect:"leftLoop" }); </script>
 </div>
-
-<footer>
- <ul>
-   <li><a href="#"></a></li>
- </ul>
-</footer>
-</div>
+<footer></footer>
 <div id="SideBar">
   <ul>
     <li><a href="#">热门问答</a></li>
@@ -72,5 +81,8 @@
   </ul>
 </div>
 <div id="Mask"></div>
+
+</div>
+
 </body>
 </html>
